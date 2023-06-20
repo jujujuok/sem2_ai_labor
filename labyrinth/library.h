@@ -30,8 +30,11 @@ typedef struct labyrinth
     int treasurey;
 } Lab;
 
+void checkInput(FILE *in, int argc, char *argv[]);
 
-Lab *readLabFile(FILE *file);
+char *readFile(FILE *file);
+
+void fileToLab(char *file_content, Lab **labyrinth);
 
 void printLab(Lab *lab);
 

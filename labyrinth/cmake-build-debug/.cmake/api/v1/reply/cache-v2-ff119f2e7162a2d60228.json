@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/DHBW/2.Semester/angewandte_informatik_labor/labyrinth/cmake-build-debug"
+			"value" : "c:/DHBW/2.Semester/sem2_ai_labor/labyrinth/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/DHBW/2.Semester/angewandte_informatik_labor/labyrinth/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/DHBW/2.Semester/sem2_ai_labor/labyrinth/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/DHBW/2.Semester/angewandte_informatik_labor/labyrinth"
+			"value" : "C:/DHBW/2.Semester/sem2_ai_labor/labyrinth"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1131,7 +1131,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/DHBW/2.Semester/angewandte_informatik_labor/labyrinth/cmake-build-debug"
+			"value" : "C:/DHBW/2.Semester/sem2_ai_labor/labyrinth/cmake-build-debug"
 		},
 		{
 			"name" : "labyrinth_IS_TOP_LEVEL",
@@ -1155,7 +1155,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/DHBW/2.Semester/angewandte_informatik_labor/labyrinth"
+			"value" : "C:/DHBW/2.Semester/sem2_ai_labor/labyrinth"
 		}
 	],
 	"kind" : "cache",

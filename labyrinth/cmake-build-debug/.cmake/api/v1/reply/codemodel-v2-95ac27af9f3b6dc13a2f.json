@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/DHBW/2.Semester/angewandte_informatik_labor/labyrinth/cmake-build-debug",
-		"source" : "C:/DHBW/2.Semester/angewandte_informatik_labor/labyrinth"
+		"build" : "C:/DHBW/2.Semester/sem2_ai_labor/labyrinth/cmake-build-debug",
+		"source" : "C:/DHBW/2.Semester/sem2_ai_labor/labyrinth"
 	},
 	"version" : 
 	{
