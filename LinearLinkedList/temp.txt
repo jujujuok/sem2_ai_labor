@@ -1,0 +1,42 @@
+void LinListFreeCell(LinListCell *anchor, LinListCell *junk) {
+    /*Gibt eine einzelne Listenzelle und den gespeicherten String an die
+        Speicherverwaltung zurück*/
+    if (junk == NULL || anchor == NULL) return;
+
+    LinListCell *prev = anchor;
+    while (prev->next && prev->next != junk) {
+        prev = prev->next;
+    }
+
+    if (prev->next == junk) {
+        prev->next = junk->next;
+        free(junk);
+    }
+}
+
+
+
+void LinListFree(LinListCell *anchor) {
+    /*Gibt die gesamte Liste mit allen Zellen an die Speicherverwaltung
+    zurück und setzt den Listenanker auf NULL*/
+    LinListCell *current = anchor;
+    while (current != NULL) {
+        LinListCell *next = current->next;
+        free(current);
+        current = next;
+    }
+}
+
+
+//2) Liste in umgekehrter Reihenfolge wieder ausgeben.
+    /*LinListCell *reverse = NULL;
+    LinListCell *cur = anchor;
+
+    while(cur != NULL){
+        LinListInsertFirst(&reverse, cur);
+        cur = cur->next;
+    }
+    LinListPrint(reverse);*/
+
+    // 3) Liste in Originalreihenfolge wieder ausgeben.
+    LinListPrint(anchor);

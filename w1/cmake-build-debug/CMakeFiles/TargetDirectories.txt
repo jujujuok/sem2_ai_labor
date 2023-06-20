@@ -1,0 +1,3 @@
+C:/DHBW/2.Semester/angewandte_informatik_labor/w1/cmake-build-debug/CMakeFiles/w1.dir
+C:/DHBW/2.Semester/angewandte_informatik_labor/w1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/DHBW/2.Semester/angewandte_informatik_labor/w1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

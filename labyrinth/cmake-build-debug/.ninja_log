@@ -1,0 +1,4 @@
+# ninja log v5
+10	255	7089958956746197	CMakeFiles/labyrinth.dir/library.c.obj	1eabefdeb161a5b5
+0	261	7089958956746197	CMakeFiles/labyrinth.dir/main.c.obj	5880722ff0ca3072
+261	575	7089958959916033	labyrinth.exe	47e334faed68610f
