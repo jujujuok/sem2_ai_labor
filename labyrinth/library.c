@@ -2,40 +2,56 @@
 // Created by BUERKJU on 14.06.2023.
 //
 
+#include <ctype.h>
 #include "library.h"
 
-char *readFile(FILE *file) {
-    while (fgetc(file)) {
+void readFile(char *filename, Lab *labyrinth) {
+    FILE *fptr;
+    fptr = fopen(filename, "r");
 
-    }
+    char line[MAXROWS];
+    int row = 0;
+    while (fgets(line, MAXROWS, fptr)) {
+        // check if labyrinth is valid
+        for (int i = 0; i < MAXROWS; ++i) {
+            labyrinth->lab[row][i] = line[i];
+            // Alternative: memcpy
 
-    return NULL;
-}
-
-void fileToLab(char *file_content, Lab **labyrinth) {
-
-}
-
-
-void printLab(Lab *lab) {
-    for (int i = 0; i < MAXROWS && lab[i][0] != '\0'; i++) {
-        for (int j = 0; j < MAXCOLS && lab[i][j] != '\0'; j++) {
-            printf("%c", lab[i][j]);
+            if (toupper(labyrinth->lab[row][i]) == 'S') {
+                labyrinth->startx = row;
+                labyrinth->starty = i;
+            } else if (toupper(labyrinth->lab[row][i]) == 'X') {
+                labyrinth->treasurex = row;
+                labyrinth->treasurey = i;
+            }
         }
-        printf("\n");
+        row += 1;
+    }
+
+    labyrinth->maxrow = row;
+}
+
+void printLab(Lab *labyrinth) {
+    for (int i = 0; i < labyrinth->maxrow; i++) {
+        for (int j = 0; j < strlen(labyrinth->lab[i]); j++) {
+            printf("%c", labyrinth->lab[i][j]);
+            // Alternative: printf "%s"
+        }
     }
 }
 
-void checkInput(FILE *in, int argc, char *argv[]) {
-    if (argc > 2) {
-        fprintf(stderr, "Usage: %s [<file>]\n", argv[0]);
-        exit(EXIT_FAILURE);
-    }
-    if (argc == 2) {
-        in = fopen(argv[1], "r");
-        if (!in) {
-            perror(argv[0]);
-            exit(EXIT_FAILURE);
-        }
-    }
+bool checkInput(int length_params, char *params[]) {
+    return length_params > 1;
+}
+
+bool findSolution(Lab *labyrinth, int x, int y) {
+    if (x == labyrinth->treasurex && y == labyrinth->treasurey) return 1;
+
+    if (labyrinth->lab[x][y] == '#') return 0;
+
+    return findSolution(labyrinth, x + 1, y) ||
+           findSolution(labyrinth, x, y + 1) ||
+           findSolution(labyrinth, x - 1, y) ||
+           findSolution(labyrinth, x, y - 1);
+    //überprüfen ob man schon mal da war
 }

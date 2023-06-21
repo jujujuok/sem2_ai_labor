@@ -19,9 +19,8 @@
 
 /* Data type: Labyrinth - ASCII map, costs, direction */
 
-typedef struct labyrinth
-{
-    char lab[MAXCOLS+2][MAXROWS];
+typedef struct labyrinth {
+    char lab[MAXCOLS + 2][MAXROWS];
     long costs[MAXCOLS][MAXROWS];
     int maxrow;
     int startx;
@@ -30,12 +29,12 @@ typedef struct labyrinth
     int treasurey;
 } Lab;
 
-void checkInput(FILE *in, int argc, char *argv[]);
+bool checkInput(int length_params, char *params[]);
 
-char *readFile(FILE *file);
+void readFile(char *filename, Lab *lab);
 
-void fileToLab(char *file_content, Lab **labyrinth);
+void printLab(Lab *labyrinth);
 
-void printLab(Lab *lab);
+bool findSolution(Lab *labyrinth, int x, int y);
 
 #endif //LABYRINTH_LIBRARY_H

@@ -2,17 +2,15 @@
 #include "library.h"
 
 int main(int argc, char *argv[]) {
-    FILE* in = stdin;
-    Lab *labyrinth;
+    Lab *labyrinth = malloc(sizeof(Lab));
 
-    checkInput(in, argc, argv);
+    if (!checkInput(argc, argv)) { return 0; }
 
-    char *file_content;
-    file_content = readFile(in);
-    fileToLab(file_content, &labyrinth);
-    free(file_content);
+    readFile(argv[1], labyrinth);
 
     printLab(labyrinth);
+
+    findSolution(labyrinth, labyrinth->startx, labyrinth->starty);
 
     return 0;
 }
