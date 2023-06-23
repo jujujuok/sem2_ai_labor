@@ -1,0 +1,20 @@
+def find_solution(lab: List[str], x: int, y: int) -> bool:
+    if x == labyrinth["treasure"][0] and y == labyrinth["treasure"][1]:
+        return True
+
+    if lab[x][y] == "#" or lab[x][y] == ".":
+        return False
+
+    if lab[x][y] == " ":
+        lab[x][y] = "."
+
+        if (find_solution(lab, x + 1, y) or
+                find_solution(lab, x, y + 1) or
+                find_solution(lab, x - 1, y) or
+                find_solution(lab, x, y - 1)):
+            return True
+        else:
+            lab[x][y] = " "
+    return False
+
+

@@ -12,5 +12,7 @@ int main(int argc, char *argv[]) {
 
     findSolution(labyrinth, labyrinth->startx, labyrinth->starty);
 
+    printLab(labyrinth);
+
     return 0;
 }

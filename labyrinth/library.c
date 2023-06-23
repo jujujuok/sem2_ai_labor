@@ -47,11 +47,17 @@ bool checkInput(int length_params, char *params[]) {
 bool findSolution(Lab *labyrinth, int x, int y) {
     if (x == labyrinth->treasurex && y == labyrinth->treasurey) return 1;
 
-    if (labyrinth->lab[x][y] == '#') return 0;
+    if (labyrinth->lab[x][y] == '#' || labyrinth->lab[x][y] == '.') return 0;
 
-    return findSolution(labyrinth, x + 1, y) ||
-           findSolution(labyrinth, x, y + 1) ||
-           findSolution(labyrinth, x - 1, y) ||
-           findSolution(labyrinth, x, y - 1);
+    if (labyrinth->lab[x][y] == ' ') {
+        labyrinth->lab[x][y] = '.';
+    }
+
+    if (findSolution(labyrinth, x, y + 1 )||
+    findSolution(labyrinth, x + 1, y) ||
+        findSolution(labyrinth, x - 1, y) ||
+        findSolution(labyrinth, x, y - 1)) { return 1; }
+    else { labyrinth->lab[x][y] = ' '; }
+    return 0;
     //überprüfen ob man schon mal da war
 }
