@@ -10,11 +10,11 @@ int main(int argc, char *argv[]) {
 
     printLab(labyrinth);
 
-    if (!findSolution(labyrinth, labyrinth->startx, labyrinth->starty)) {
+    if (findSolution(labyrinth, labyrinth->startx, labyrinth->starty)) {
+        printLab(labyrinth);
+    } else {
         printf("No path could be found.\n");
     }
-
-    printLab(labyrinth);
 
     return 0;
 }
