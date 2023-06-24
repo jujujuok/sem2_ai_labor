@@ -1,3 +1,0 @@
-C:/DHBW/2.Semester/sem2_ai_labor/labyrinth/cmake-build-debug/CMakeFiles/labyrinth.dir
-C:/DHBW/2.Semester/sem2_ai_labor/labyrinth/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/DHBW/2.Semester/sem2_ai_labor/labyrinth/cmake-build-debug/CMakeFiles/rebuild_cache.dir
