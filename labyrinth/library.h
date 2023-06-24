@@ -21,7 +21,7 @@
 
 typedef struct labyrinth {
     char lab[MAXCOLS + 2][MAXROWS];
-    long costs[MAXCOLS][MAXROWS];
+    long costs[MAXCOLS][MAXROWS]; // ob man schon mal da war
     int maxrow;
     int startx;
     int starty;

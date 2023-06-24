@@ -15,6 +15,7 @@ void readFile(char *filename, Lab *labyrinth) {
         // check if labyrinth is valid
         for (int i = 0; i < MAXROWS; ++i) {
             labyrinth->lab[row][i] = line[i];
+            labyrinth->costs[row][i] = 0;
             // Alternative: memcpy
 
             if (toupper(labyrinth->lab[row][i]) == 'S') {
@@ -47,14 +48,14 @@ bool checkInput(int length_params, char *params[]) {
 bool findSolution(Lab *labyrinth, int x, int y) {
     if (x == labyrinth->treasurex && y == labyrinth->treasurey) return 1;
 
-    if (labyrinth->lab[x][y] == '#' || labyrinth->lab[x][y] == '.') return 0;
+    if (labyrinth->lab[x][y] == '#' || labyrinth->costs[x][y]) //costs ==labyrinth->lab[x][y] == '.')
+    { return 0; }
 
-    if (labyrinth->lab[x][y] == ' ') {
-        labyrinth->lab[x][y] = '.';
-    }
+    labyrinth->costs[x][y] = 1;
+    if (labyrinth->lab[x][y] == ' ') labyrinth->lab[x][y] = '.';
 
     if (findSolution(labyrinth, x, y + 1 )||
-    findSolution(labyrinth, x + 1, y) ||
+        findSolution(labyrinth, x + 1, y) ||
         findSolution(labyrinth, x - 1, y) ||
         findSolution(labyrinth, x, y - 1)) { return 1; }
     else { labyrinth->lab[x][y] = ' '; }
