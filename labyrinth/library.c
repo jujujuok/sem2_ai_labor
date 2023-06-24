@@ -13,7 +13,7 @@ void readFile(char *filename, Lab *labyrinth) {
     int row = 0;
     while (fgets(line, MAXROWS, fptr)) {
         // check if labyrinth is valid
-        for (int i = 0; i < MAXROWS; ++i) {
+        for (int i = 0; i < strlen(line); ++i) {
             labyrinth->lab[row][i] = line[i];
             labyrinth->costs[row][i] = 0;
             // Alternative: memcpy
