@@ -1,0 +1,3 @@
+C:/DHBW/2.Semester/sem2_ai_labor/w7_sortieren1/cmake-build-debug/CMakeFiles/w7_sortieren1.dir
+C:/DHBW/2.Semester/sem2_ai_labor/w7_sortieren1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/DHBW/2.Semester/sem2_ai_labor/w7_sortieren1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

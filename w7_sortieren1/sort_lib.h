@@ -1,0 +1,8 @@
+//
+// Created by BUERKJU on 26.06.2023.
+//
+
+#ifndef W7_SORTIEREN1_SORT_LIB_H
+#define W7_SORTIEREN1_SORT_LIB_H
+
+#endif //W7_SORTIEREN1_SORT_LIB_H
