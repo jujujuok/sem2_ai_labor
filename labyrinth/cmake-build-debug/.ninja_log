@@ -1,7 +1,8 @@
 # ninja log v5
-2	437	7093302372517528	CMakeFiles/labyrinth.dir/library.c.obj	8348295cd4bf4842
-98	223	7093303472686451	labyrinth.exe	47e334faed68610f
-1	98	7093303471507781	CMakeFiles/labyrinth.dir/main.c.obj	24862bd15dfe0c38
-10	102	7093306310080043	CMakeFiles/labyrinth.dir/main.c.obj	24862bd15dfe0c38
 1	104	7093306310080043	CMakeFiles/labyrinth.dir/library.c.obj	8348295cd4bf4842
 104	226	7093306311256285	labyrinth.exe	47e334faed68610f
+10	102	7093306310080043	CMakeFiles/labyrinth.dir/main.c.obj	24862bd15dfe0c38
+1	111	7095906185169647	CMakeFiles/labyrinth.dir/main.c.obj	24862bd15dfe0c38
+10	117	7095906185227350	CMakeFiles/labyrinth.dir/library.c.obj	8348295cd4bf4842
+2	119	7095908273025269	CMakeFiles/labyrinth.dir/terrain_maze.c.obj	df09fa0bc87ccef8
+120	305	7095908274747268	labyrinth.exe	c2d3ff6a64fe5dab

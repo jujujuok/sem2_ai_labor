@@ -16,7 +16,6 @@
 #define MAXCOLS  2048
 #define MAXROWS  2048
 
-
 /* Data type: Labyrinth - ASCII map, costs, direction */
 
 typedef struct labyrinth {
