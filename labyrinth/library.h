@@ -13,8 +13,8 @@
 #include <limits.h>
 #include <assert.h>
 
-#define MAXCOLS  2048
-#define MAXROWS  2048
+#define MAXCOLS 256
+#define MAXROWS 256
 
 /* Data type: Labyrinth - ASCII map, costs, direction */
 

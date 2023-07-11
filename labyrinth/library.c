@@ -53,7 +53,6 @@ bool findSolution(Lab *labyrinth, int x, int y) {
     if (labyrinth->lab[x][y] == '#' || labyrinth->costs[x][y]) //costs ==labyrinth->lab[x][y] == '.')
     { return 0; }
 
-    labyrinth->costs[x][y] = 1;
     if (labyrinth->lab[x][y] == ' ') labyrinth->lab[x][y] = '.';
 
     if (findSolution(labyrinth, x, y + 1 )||

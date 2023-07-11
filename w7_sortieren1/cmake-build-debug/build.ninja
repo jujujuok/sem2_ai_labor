@@ -55,6 +55,12 @@ build CMakeFiles/w7_sortieren1.dir/main.c.obj: C_COMPILER__w7_sortieren1_Debug C
   OBJECT_DIR = CMakeFiles\w7_sortieren1.dir
   OBJECT_FILE_DIR = CMakeFiles\w7_sortieren1.dir
 
+build CMakeFiles/w7_sortieren1.dir/sort_lib.c.obj: C_COMPILER__w7_sortieren1_Debug C$:/DHBW/2.Semester/sem2_ai_labor/w7_sortieren1/sort_lib.c || cmake_object_order_depends_target_w7_sortieren1
+  DEP_FILE = CMakeFiles\w7_sortieren1.dir\sort_lib.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu2x
+  OBJECT_DIR = CMakeFiles\w7_sortieren1.dir
+  OBJECT_FILE_DIR = CMakeFiles\w7_sortieren1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target w7_sortieren1
@@ -63,7 +69,7 @@ build CMakeFiles/w7_sortieren1.dir/main.c.obj: C_COMPILER__w7_sortieren1_Debug C
 #############################################
 # Link the executable w7_sortieren1.exe
 
-build w7_sortieren1.exe: C_EXECUTABLE_LINKER__w7_sortieren1_Debug CMakeFiles/w7_sortieren1.dir/main.c.obj
+build w7_sortieren1.exe: C_EXECUTABLE_LINKER__w7_sortieren1_Debug CMakeFiles/w7_sortieren1.dir/main.c.obj CMakeFiles/w7_sortieren1.dir/sort_lib.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\w7_sortieren1.dir
