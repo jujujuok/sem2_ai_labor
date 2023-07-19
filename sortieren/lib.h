@@ -7,7 +7,7 @@
 
 #include <time.h>
 
-#define LIST_LENGTH 100
+#define LIST_LENGTH 100000
 
 void swap(int *a, int *b);
 

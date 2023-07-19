@@ -1,0 +1,11 @@
+# ninja log v5
+0	96	7114215837460713	CMakeFiles/sortieren.dir/main.c.obj	6451f9eaa968a95
+7	106	7114215837562565	CMakeFiles/sortieren.dir/lib.c.obj	20209bcbedeb10dc
+106	262	7114215839087736	sortieren.exe	4b535c4031e04b69
+10	754	7114745470654684	CMakeFiles/sortieren.dir/main.c.obj	6451f9eaa968a95
+755	1453	7114745477689668	sortieren.exe	4b535c4031e04b69
+2	141	7114746095397313	CMakeFiles/sortieren.dir/main.c.obj	6451f9eaa968a95
+14	160	7114746095576626	CMakeFiles/sortieren.dir/lib.c.obj	20209bcbedeb10dc
+160	352	7114746097401161	sortieren.exe	4b535c4031e04b69
+4	174	7114746431606161	CMakeFiles/sortieren.dir/main.c.obj	6451f9eaa968a95
+175	375	7114746433480813	sortieren.exe	4b535c4031e04b69
